@@ -1,2 +1,68 @@
 
-<h1></h1>
+<div id="foundations" class="container">
+
+  <div class="filters">
+
+    <div class="pull-right">
+
+      <select class="selectpicker">
+        <option>Variant 1</option>
+      </select>
+
+
+    </div>
+    
+  </div>
+
+  <div class="list-wrapper top34">
+
+    <% (1..10).each do | item | %>
+
+        <div class="foundation-item clearfix">
+
+          <h2>
+
+            <p class="text-muted pull-right">
+              <label class="fa fa-signal"> </label>
+              <span><%= "#{(100 - item)}%" %></span>
+
+              <span class="left21">Medicina</span>
+            </p>
+
+            <%= link_to foundation_path(id: item) do %>
+                <span>Nume ONG <%= item %></span>
+            <% end %>
+
+          </h2>
+
+          <p class="text-justify">
+
+            Decretul prin care presedintele Klaus Iohannis il desemneaza pe Gabriel Oprea ca prim-ministru interimar al
+            Guvernului Romaniei, "pe perioada imposibilitatii exercitarii atributiilor de prim-ministru de catre Victor
+            Ponta", a fost publicat luni seara in Monitorul Oficial, anunta Agerpres.
+
+            In document se arata ca desemnarea lui Gabriel Oprea de catre seful statului se face "in temeiul prevederilor
+            art. 94 lit c), ale art.100 alin (1), ale art.107 alin (3) din Constitutia Romaniei, republicata, precum si
+            ale art.9 din Legea nr.90/2001 privind organizarea si functionarea Guvernului Romaniei si a ministerelor, cu
+            modificarile si completarile ulterioare" si "avand in vedere scrisoarea prim-ministrului, domnul Victor-Viorel
+            Ponta".
+
+            Decretul pentru "desemnarea unui membru al Guvernului ca prim-ministru interimar", semnat luni de presedintele
+            Klaus Iohannis, a fost publicat in Monitorul Oficial al Romaniei, partea I, nr.445 din 22 iunie.
+
+          </p>
+
+          <p>
+            <%= link_to foundation_path(id: item) do %>
+                <span>afla mai multe</span>
+            <% end %>
+          </p>
+
+        </div>
+
+    <% end %>
+
+  </div>
+
+</div>
+

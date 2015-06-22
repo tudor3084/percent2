@@ -6,4 +6,11 @@ class FoundationsController < ApplicationController
 
   end
 
+
+  def show
+
+
+
+  end
+
 end

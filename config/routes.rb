@@ -7,6 +7,6 @@ Rails.application.routes.draw do
 
   get "/nice", to: 'home#nice'
 
-  resources :foundations, only: ['index']
+  resources :foundations, only: ['index', 'show']
 
 end

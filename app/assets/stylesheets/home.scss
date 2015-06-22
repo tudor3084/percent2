@@ -2,14 +2,28 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$highlight_color : #404040;
+
+$default_text_color: #404040;
+
+$headline_color: #0E232F;
+
+
+#siteHeader {
+
+//  border-bottom: 1px solid #909090;
+
+}
+
 h1 {
 
   font-size: 50px;
 
-  color: #404040;
+  color: $default_text_color;
 
   margin-top: 40px;
 
+  border-bottom: 1px solid #909090;
 }
 
 a.root-path {
@@ -27,7 +41,7 @@ div.section {
 
   border-bottom: 1px solid #DADADA;
 
-  color: #606060;
+  color: $default_text_color;
 
 }
 
@@ -49,12 +63,37 @@ div.section:hover {
 
 }
 
+div.section h3 {
+  color: $headline_color;
+}
+
 div.section:hover h3 {
 
   transition: .4s;
   transition-property: color;
 
-  color: #00A36A;
+//  color: #00A36A;
+  color: $highlight_color;
 //  text-shadow: 0 0 4px rgba(0, 0, 0, .2);
 
 }
+
+div.social-icon-wrapper {
+
+  color: $highlight_color;
+
+}
+
+div.social-icon-wrapper:hover {
+
+//  border: 1px solid $highlight_color;
+//
+//  border-radius: 50%;
+
+  color: $highlight_color;
+
+  cursor: pointer;
+
+}
+
+
