@@ -1,0 +1,60 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+
+  font-size: 50px;
+
+  color: #404040;
+
+  margin-top: 40px;
+
+}
+
+a.root-path {
+
+  text-decoration: none;
+  color: inherit;
+
+}
+
+div.section {
+
+  margin: 0px 0;
+
+  padding: 20px 20px;
+
+  border-bottom: 1px solid #DADADA;
+
+  color: #606060;
+
+}
+
+div.section:last-of-type {
+  border: none;
+}
+
+
+div.section:hover {
+
+  transition-duration: .4s;
+  transition-property: border, color;
+
+  cursor: pointer;
+
+  color: #404040;
+
+  background-color: white;
+
+}
+
+div.section:hover h3 {
+
+  transition: .4s;
+  transition-property: color;
+
+  color: #00A36A;
+//  text-shadow: 0 0 4px rgba(0, 0, 0, .2);
+
+}
