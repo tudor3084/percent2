@@ -2,9 +2,11 @@
 
   <div class="row">
 
-    <div class="col-xs-12 col-md-2 top34 text-center">
-      <i class="fa fa-2x fa-backward"></i>
-      <p class="top8">Inapoi la lista <br/> ONG-uri</p>
+    <div class="col-xs-12 col-md-2 top21 text-center">
+      <%= link_to foundations_path do %>
+          <i class="fa fa-2x fa-backward"></i>
+          <p class="top8">Inapoi la lista <br/> ONG-uri</p>
+      <% end %>
     </div>
 
     <div class="col-xs-12 col-md-8">
@@ -57,22 +59,22 @@
 
         <% (1..3).each do | project | %>
 
-        <div class="foundation-project">
+            <div class="foundation-project">
 
-          <h5>Proiect <%= project %></h5>
+              <h5>Proiect <%= project %></h5>
 
-          <p>
+              <p>
 
-            Lucrăm cu copiii, dar şi cu părinţii şi cadrele didactice: armonizarea acestei triade este esenţială pentru
-            educaţia şi bunăstarea copiilor. In cei 25 de ani, Salvati Copiii a inclus în programele sale 1.150.000 de copii.
-            Cei 1.800 de voluntari s-au implicat în activităţile directe cu copiii şi partenerii organizaţiei.
+                Lucrăm cu copiii, dar şi cu părinţii şi cadrele didactice: armonizarea acestei triade este esenţială pentru
+                educaţia şi bunăstarea copiilor. In cei 25 de ani, Salvati Copiii a inclus în programele sale 1.150.000 de copii.
+                Cei 1.800 de voluntari s-au implicat în activităţile directe cu copiii şi partenerii organizaţiei.
 
-            În prezent, organizaţia desfăşoară programe în 39 de localităţi, are filiale în 12 judeţe şi în Bucureşti, peste
-            6.000 de membri şi mai mult de 1.800 de voluntari, în majoritate tineri.
+                În prezent, organizaţia desfăşoară programe în 39 de localităţi, are filiale în 12 judeţe şi în Bucureşti, peste
+                6.000 de membri şi mai mult de 1.800 de voluntari, în majoritate tineri.
 
-          </p>
+              </p>
 
-        </div>
+            </div>
 
         <% end %>
 
